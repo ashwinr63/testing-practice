@@ -20,7 +20,7 @@ function calc(option, num1, num2) {
     case 'subtract': return difference(num1, num2);
     case 'multiply': return product(num1, num2);
     case 'divide': return quotient(num1, num2);
-    case 'exponent': return "Operation not supported";
+    default: return "Operation not supported";
   }
 }
 
