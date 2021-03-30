@@ -20,7 +20,6 @@ function calc(option, num1, num2) {
     case 'subtract': return difference(num1, num2);
     case 'multiply': return product(num1, num2);
     case 'divide': return quotient(num1, num2);
-    case 'exponent': return power(num1, num2);
   }
 }
 
@@ -57,7 +56,8 @@ try {
   // Test Case 5
   // --------------------------------------------------
   // It should return the message 'Operation not supported.' when the user provides: exponent, 2, 8.
-
+  var result = calc('exponent', 2, 8);
+  if (result == "Operation not Supported") throw new Error('Operation not supported.' + result);
   console.log('All tests passed successfully.');
 
 // ==================================================
