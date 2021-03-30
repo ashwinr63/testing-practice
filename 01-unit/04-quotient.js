@@ -2,7 +2,6 @@
 // DEFINE FUNCTION(S)
 // ==================================================
 function quotient(num1, num2) {
-
   return num1 / num2;
 }
 
@@ -21,12 +20,15 @@ try {
   // Test Case 2
   // --------------------------------------------------
   // It should return the text 'ERROR' when the second number is 0.
+  var result = quotient(2, 0);
+  if (result === NaN) throw new Error('ERROR' + result);
 
   // --------------------------------------------------
   // Test Case 3
   // --------------------------------------------------
   // It should ignore additional numbers.
-
+  var result = quotient(2, 2, 2, 2, 2, 2);
+  if (result !== 1) throw new Error('Expected quotient(2, 2) to be 1. Received: ' + result);
   // --------------------------------------------------
   // Test Case 4
   // --------------------------------------------------
